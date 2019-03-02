@@ -33,5 +33,5 @@ end
 
 def bulk_tweet_shortener(tweets)
   #binding.pry
-  puts tweets.map {|tweet| word_substituter(tweet)}
+  tweets.map {|tweet| puts word_substituter(tweet)}
 end
