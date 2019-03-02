@@ -21,11 +21,11 @@ end
 def word_substituter(tweet)
   binding.pry
 
-tweet_as_array = tweet.split(" ")
+  tweet_as_array = tweet.split(" ")
 
-tweet_as_array.each_with_index {|word, index|
-  dictionary.keys.each {|key| tweet_as_array[index] = dictionary[key] if word == key}
-}
+  tweet_as_array.each_with_index {|word, index|
+    dictionary.keys.each {|key| tweet_as_array[index] = dictionary[key] if word == key}
+  }
 
 end
 
