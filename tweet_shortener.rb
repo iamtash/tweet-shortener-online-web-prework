@@ -26,7 +26,7 @@ def word_substituter(tweet)
   tweet_as_array.each_with_index {|word, index|
     dictionary.keys.each {|key| tweet_as_array[index] = dictionary[key] if word == key}
   }
-  binding.pry
-  tweet_as_array
+
+  tweet_as_string = tweet_as_array.join(" ")
 
 end
