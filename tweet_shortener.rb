@@ -30,4 +30,3 @@ def word_substituter(tweet)
   tweet_as_array.join(" ")
 
 end
-
