@@ -20,7 +20,6 @@ end
 
 def word_substituter(tweet)
 
-
   tweet_as_array = tweet.split(" ")
 
   tweet_as_array.each_with_index {|word, index|
