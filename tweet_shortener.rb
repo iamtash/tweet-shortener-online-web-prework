@@ -27,6 +27,5 @@ def word_substituter(tweet)
     dictionary.keys.each {|key| tweet_as_array[index] = dictionary[key] if word == key}
   }
 
-end
 
 end
