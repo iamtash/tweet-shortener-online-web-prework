@@ -23,7 +23,7 @@ def word_substituter(tweet)
   tweet_as_array = tweet.split(" ")
 
   tweet_as_array.each_with_index {|word, index|
-    dictionary.keys.each {|key| tweet_as_array[index] = dictionary[key] if word == key}
+    dictionary.keys.each {|key| tweet_as_array[index] = dictionary[key] if word == key || word.downcase == key}
   }
 
   tweet_as_array.join(" ")
